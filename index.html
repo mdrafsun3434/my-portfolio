@@ -1,49 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Rafsan Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Animated Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Hi, I'm Rafsan 👋</h1>
-<p>Frontend Developer | Diploma Engineer | Learning Vibe Coding 🚀</p>
 
-  <button onclick="showMsg()">Click Me</button>
+    <nav class="navbar">
+        <div class="logo">Dev<span>Portfolio</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-  <h2>My Projects 📂</h2>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Hi, I'm <span class="highlight">Rafsun</span></h1>
+            <p class="animate-subtext">I design and code beautifully simple things.</p>
+            <div class="hero-btns">
+                <a href="#" class="btn-primary">View Work</a>
+                <a href="#" class="btn-secondary">Hire Me</a>
+            </div>
+        </div>
+    </section>
 
-<div class="projects">
-  <div class="card">
-    <h3>Portfolio Website</h3>
-    <p>My personal animated portfolio</p>
-  </div>
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About <span class="highlight">Me</span></h2>
+                    <p>Hello! I'm a web developer who loves building things that live on the internet. My interest in web development started back in 2026 when I decided to try editing custom web pages.</p>
+                    <p>Fast-forward to today, I focus on creating fast, accessible, and visually stunning websites. I enjoy turning complex problems into simple, beautiful designs.</p>
+                    
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-box">
+                        <div class="inner-box">Your Photo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
-    <h3>Calculator App</h3>
-    <p>Simple JavaScript calculator</p>
-  </div>
+    <!-- skill -->
 
-  <div class="card">
-    <h3>ToDo App</h3>
-    <p>Task management app using JS</p>
-  </div>
-</div>
-<h2>Contact Me 📞</h2>
+    <section class="bento-skills">
+    <h2 class="title">My <span class="gradient-text">Tech Stack</span></h2>
+    
+    <div class="bento-grid">
+        <div class="card large" style="--color: #38bdf8;">
+            <div class="card-content">
+                <i class="fab fa-react"></i>
+                <h3>Frontend Mastery</h3>
+                <p>React, Next.js, Tailwind CSS</p>
+            </div>
+        </div>
 
-<form onsubmit="sendMsg(event)">
-  <input type="text" placeholder="Your Name" required>
-  <br><br>
+        <div class="card small" style="--color: #f7df1e;">
+            <div class="card-content">
+                <h3>JavaScript</h3>
+                <div class="progress"></div>
+            </div>
+        </div>
 
-  <input type="email" placeholder="Your Email" required>
-  <br><br>
+        <div class="card small" style="--color: #68a063;">
+            <div class="card-content">
+                <h3>Node.js</h3>
+            </div>
+        </div>
 
-  <textarea placeholder="Your Message" required></textarea>
-  <br><br>
+        <div class="card medium" style="--color: #47a248;">
+            <div class="card-content">
+                <h3>MongoDB & Mongoose</h3>
+                <p>Database Management</p>
+            </div>
+        </div>
 
-  <button type="submit">Send</button>
-</form>
+        <div class="card small" style="--color: #ff3e00;">
+            <div class="card-content">
+                <h3>Firebase</h3>
+            </div>
+        </div>
 
+        <div class="card small" style="--color: #007acc;">
+            <div class="card-content">
+                <h3>TypeScript</h3>
+            </div>
+        </div>
+    </div>
+</section><section id="contact" class="contact-section">
+        <h2 class="title">Get In <span class="gradient-text">Touch</span></h2>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Me</h4>
+                        <p>yourname@email.com</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
 
-  <script src="script.js"></script>
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Crafted with ❤️ by <span class="gradient-text">Your Name</span></p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
