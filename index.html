@@ -8,27 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <nav class="navbar">
+<nav class="navbar">
         <div class="logo">Dev<span>Portfolio</span></div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="animate-text">Hi, I'm <span class="highlight">Rafsun</span></h1>
             <p class="animate-subtext">I design and code beautifully simple things.</p>
             <div class="hero-btns">
-                <a href="#" class="btn-primary">View Work</a>
-                <a href="#" class="btn-secondary">Hire Me</a>
+                <a href="#projects" class="btn-primary">View Work</a>
+                <a href="#contact" class="btn-secondary">Hire Me</a>
             </div>
         </div>
     </section>
+
 
     <section id="about" class="about-section">
         <div class="container">
@@ -101,54 +101,95 @@
             </div>
         </div>
     </div>
-</section><section id="contact" class="contact-section">
-        <h2 class="title">Get In <span class="gradient-text">Touch</span></h2>
+</section>
+
+
+
+<section id="projects" class="work-section">
+    <div class="container">
+        <h2 class="title">My <span class="highlight">Projects</span></h2>
         
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="info-card">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>Email Me</h4>
-                        <p>yourname@email.com</p>
-                    </div>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h4>Location</h4>
-                        <p>Dhaka, Bangladesh</p>
+        <div class="filter-btns">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+            <button class="filter-btn" data-filter="js">JavaScript</button>
+            <button class="filter-btn" data-filter="react">React</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+            <div class="project-item web">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 1">
+                    <div class="project-overlay">
+                        <h3>E-Commerce Landing</h3>
+                        <p>Modern HTML/CSS landing page</p>
+                        <a href="https://mdrafsun3434.github.io/tea-house-website/" class="view-btn">View Live</a>
                     </div>
                 </div>
             </div>
 
-            <form class="contact-form">
-                <div class="input-group">
-                    <input type="text" placeholder="Your Name" required>
+            <div class="project-item js">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 2">
+                    <div class="project-overlay">
+                        <h3>Weather App</h3>
+                        <p>Payoo Account</p>
+                        <a href="https://mdrafsun3434.github.io/payoo-code/" class="view-btn">View Live</a>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <input type="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="project-item react">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 3">
+                    <div class="project-overlay">
+                        <h3>Portfolio Website</h3>
+                        <p>React animated personal site</p>
+                        <a href="" class="view-btn">View Live</a>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+
+            </div>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-img">
+                    <div class="img-box">
+                        <img src="https://via.placeholder.com/400x400" alt="Rafsun">
+                    </div>
+                    <div class="experience-badge">
+                        <h3>1+</h3>
+                        <p>Years Experience</p>
+                    </div>
                 </div>
-                <button type="submit" class="send-btn">Send Message</button>
-            </form>
+
+                <div class="about-text">
+                    <h2 class="title">About <span class="highlight">Me</span></h2>
+                    <p>
+                        I am a passionate Web Developer with a strong focus on creating interactive and 
+                        visually stunning user experiences. My journey started with curiosity about how the web works, 
+                        and now I spend my days building high-performance websites and applications.
+                    </p>
+                    <div class="personal-info">
+                        <div class="info-item"><strong>Name:</strong> Rafsun</div>
+                        <div class="info-item"><strong>Email:</strong> rafsun@example.com</div>
+                        <div class="info-item"><strong>Freelance:</strong> Available</div>
+                    </div>
+                    <a href="#contact" class="btn-primary">Let's Talk</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Crafted with ❤️ by <span class="gradient-text">Your Name</span></p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
+
+
 
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
+
